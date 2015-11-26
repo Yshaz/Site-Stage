@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 15 Novembre 2015 à 19:54
+-- Généré le :  Jeu 26 Novembre 2015 à 09:49
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -28,6 +28,7 @@ USE `stage_iut`;
 -- Structure de la table `user`
 --
 
+DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `ID` int(5) NOT NULL AUTO_INCREMENT,
   `account_name` varchar(20) NOT NULL,
