@@ -1,0 +1,228 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+ 
+/*Police à charger*/
+@font-face {
+    	font-family: 'Open Sans';
+    	src: url('OpenSans-Regular.ttf');
+}
+ 
+.bloc_page {
+	font-family: 'Open Sans';
+}
+
+/*Fond du bandeau*/
+.bandeau {
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(to bottom, #80ba27 80%, #00527e 20%);
+	color: #FFFFFF;
+	position: fixed; 
+}
+
+.menu {
+	position: fixed; 
+}
+
+.bandeau img{
+	vertical-align:top;
+	max-height: 40px;
+	width : auto;
+}
+
+.bouton {
+	display:inline-block;
+}
+
+.bouton object{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	height: 50px;
+	line-height: 40px;
+	display: inline-block;
+}
+
+.boutonDeco a{
+	color: #FFFFFF;
+}
+
+/*Changer le fond des boutons du menu */
+.bouton:hover 
+{
+	background: linear-gradient(to bottom, #9edc3c 80%, #00527e 20%);
+}
+
+.boutonAccueil {
+	display:inline-block;
+}
+
+.boutonAccueil object{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	height: 50px;
+	line-height: 40px;
+	display: inline-block;
+}
+/*Changer le fond du bouton accueil */
+.boutonAccueil:hover 
+{
+	background: linear-gradient(to bottom, #9edc3c 80%, #00527e 20%);
+}
+
+.deconnexion {
+	position: fixed; 
+	right: 0;
+}
+
+.deconnexion .boutonDeco object{
+	border-right : none;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	height: 50px;
+	line-height: 40px;
+	display: inline-block;
+}
+
+/*Changer le fond du bouton déconnexion */
+.deconnexion .boutonDeco:hover
+{
+	background: linear-gradient(to bottom, #9edc3c 80%, #00527e 20%);
+}
+
+onlyDesktop {
+
+}
+
+.contenu {
+	margin-top: 70px;
+	margin-left: 5%;
+	margin-right: 5%;
+	color: #878585;
+}
+
+.contenu p{
+	text-align: justify;
+}
+
+.contenu h1 {
+	color: #00527e;
+	text-align: center;
+}
+
+.contenu h2 {
+	color: #00527e;
+}
+
+.contenu li{
+	list-style-type: circle;
+	font-style: italic;
+}
+
+.contenu info {
+	color: #af0334;
+	font-size: 80%;
+}
+
+.logo_connexion {
+	border-bottom: 8px solid #FFFFFF;
+}
+
+.logo_connexion p {
+	text-align: center;
+}
+
+.espace_connexion {
+	position: static;
+	padding-top: 7px;	
+	padding-bottom: 7px;
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: center;
+	border-top: 2px solid #878585;
+}
+
+.espace_connexion p {
+	text-align: center;
+	font-size: 120%;
+}
+
+.champ_connexion {
+	width: 200px;
+	height: 20px;
+}
+
+.bouton_connexion {
+	background-color: #80ba27;
+	color: #FFFFFF;
+	border: none;
+	font-size: 100%;
+}
+
+.bouton_connexion:hover {
+	background-color: #9edc3c;
+}
+
+.boutonMenu{
+	display: none;	
+}
+
+/******PETIT ECCRAN******/
+@media screen and (max-width: 773px){
+	/*Afficher le bouton menu*/
+	.boutonMenu{
+		display:inline-block;
+	}
+	
+	.boutonMenu object{
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+		height: 50px;
+		line-height: 40px;
+		display: inline-block;
+		/*border-right: 2px solid #FFFFFF;*/
+	}
+	
+	.boutonMenu:hover 
+	{
+		background: linear-gradient(to bottom, #9edc3c 80%, #00527e 20%);
+	}
+	
+	/*Ne plus afficher les autres boutons*/
+	.bouton{
+		display: none;
+	}
+	
+	/*Réduire la marge droite du contenu*/
+	.contenu {
+		margin-right: 5%;
+	}
+	
+	/*Supprimer le cadre d'information de connexion*/
+	.infoConnexion{
+		display: none;
+	}
+	
+	.espace_connexion {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
+
+/***** TRES PETIT ECRAN *****/
+@media screen and (max-width: 410px){
+	onlyDesktop{
+		display: none;
+	}
+	
+	.espace_connexion {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
